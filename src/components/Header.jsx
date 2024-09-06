@@ -10,7 +10,7 @@ import { useState } from "react";
 
 const Header = () => {
   const pathname = useLocation();
-  const [openNavigation, setOpenNavigation] = useState(true);
+  const [openNavigation, setOpenNavigation] = useState(false);
 
   const toggleNavigation = () => {
     if (openNavigation) {
@@ -30,7 +30,7 @@ const Header = () => {
 
   return (
     <div
-      className={`fixed top-0 left-0 w-full z-50  bg-n-8/90 backdrop-blur-sm border-b border-n-6
+      className={`fixed top-0 left-0 w-full z-50  bg-n-8/90  border-b border-n-6
     lg:bg-n-8/90 lg:backdrop-blur-sm ${
       openNavigation ? "bg-n-8" : "bg-n-8/90 backdrop-blur-sm"
     }`}>
